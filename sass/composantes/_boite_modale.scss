@@ -1,30 +1,33 @@
 .boite__modale {
     position: fixed;
-    width: 50%;
+    padding: 1rem;
+    width: 80%;
     height: 70%;
+    top: 10%;
+    left: 10%;
     background-color: hsl(0, 0%, 10%);
     border: 10px hsl(0, 0%, 25%) solid;
     border-radius: 5px;
     color: white;
-    top: 25%;
-    left: 25%;
-    padding: 1rem;
+    font-size: 0.85rem;
     transform: scale(0);
-    transition: all 1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     z-index: 10;
 
     &__ouvrir{
         transform: scale(1);
     }
+}
 
-    &:first-child{
-        padding: 0.5rem;
-    }
+.boite__modale__text{
+    margin-top: 0.8rem;
+
 }
 
 @media screen and (min-width : $largeur__media--tablette){
     .boite__modale {
         height: 50%;
+        font-size: 1rem;
     }
 } 

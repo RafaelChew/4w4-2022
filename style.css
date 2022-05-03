@@ -616,7 +616,7 @@ COMPOSANTES
   align-items: center;
   background-color: #1a1a1a;
   color: #d6d8e4;
-  padding-left: 10px;
+  padding: 0.5rem;
 }
 
 .site__header .header__titre {
@@ -655,7 +655,7 @@ COMPOSANTES
 header a img {
   width: 5rem;
   height: 5rem;
-  border-radius: 5px;
+  border-radius: 25%;
   margin-left: 3rem;
 }
 
@@ -685,11 +685,12 @@ header a img {
   padding: 1rem;
   transition: 0.5s;
   background-color: #0d0d0d;
+  border-bottom-right-radius: 5rem;
+  z-index: 11;
 }
 
 #chk-burger:checked ~ .menu-principal-container {
   left: 0;
-  z-index: 11;
 }
 
 .menu {
@@ -756,7 +757,7 @@ header a img {
   align-items: center;
   flex-direction: column;
   margin: none;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 0.5rem;
   height: 100%;
   margin: none;
@@ -766,7 +767,8 @@ header a img {
 
 @media screen and (min-width: 800px) {
   .accueil__menu__nav__ul .menu-item a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
   }
 }
 
@@ -958,17 +960,18 @@ header a img {
 
 .boite__modale {
   position: fixed;
-  width: 50%;
+  padding: 1rem;
+  width: 80%;
   height: 70%;
+  top: 10%;
+  left: 10%;
   background-color: #1a1a1a;
   border: 10px #404040 solid;
   border-radius: 5px;
   color: white;
-  top: 25%;
-  left: 25%;
-  padding: 1rem;
+  font-size: 0.85rem;
   transform: scale(0);
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 10;
 }
 
@@ -976,13 +979,14 @@ header a img {
   transform: scale(1);
 }
 
-.boite__modale:first-child {
-  padding: 0.5rem;
+.boite__modale__text {
+  margin-top: 0.8rem;
 }
 
 @media screen and (min-width: 800px) {
   .boite__modale {
     height: 50%;
+    font-size: 1rem;
   }
 }
 

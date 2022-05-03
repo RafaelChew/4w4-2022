@@ -55,7 +55,7 @@
               align-items: center;
               flex-direction: column;
               margin: none;
-              padding : 0.5rem;
+              padding : 0.3rem;
               border-radius: 0.5rem;
               height: 100%;
               margin: none;
@@ -65,7 +65,8 @@
 
               @media screen and (min-width : $largeur__media--tablette)
               {
-                  font-size: 1.3rem;
+                  font-size: 1.2rem;
+                  padding : 0.5rem;
               }
               
               hr{
@@ -73,23 +74,6 @@
                 color: #fff;
                 border-style: solid;
                 }
-
-                // .accueil__cours .menu-item-icone{
-                //     background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
-                // }
-                // .accueil__prof .menu-item-icone{
-                // background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
-                // }
-                // .accueil__aide .menu-item-icone{
-                // background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=book-open");
-                // }
-                // .accueil__etudiant .menu-item-icone{
-                // background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
-                // }
-            }
-
-            .menu-item-icone div:first-child {
-                //background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap"); 
             }
 
             a:hover{ // .site__footer__menu__ul .menu-item a
