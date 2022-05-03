@@ -1,0 +1,30 @@
+.boite__modale {
+    position: fixed;
+    width: 50%;
+    height: 70%;
+    background-color: hsl(0, 0%, 10%);
+    border: 10px hsl(0, 0%, 25%) solid;
+    border-radius: 5px;
+    color: white;
+    top: 25%;
+    left: 25%;
+    padding: 1rem;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+
+    z-index: 10;
+
+    &__ouvrir{
+        transform: scale(1);
+    }
+
+    &:first-child{
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (min-width : $largeur__media--tablette){
+    .boite__modale {
+        height: 50%;
+    }
+} 
