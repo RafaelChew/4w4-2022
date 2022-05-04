@@ -6,6 +6,8 @@
     box-shadow: rgb(8, 8, 8) 1px -1px 10px;
     color: $color__font-main;
 
+    align-items: center;
+
     &__recherche {
         background-color: rgba($color__background-main, 0.1);
         padding: 1rem;
@@ -117,4 +119,13 @@
 
 .web{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
+}
+
+// Page evenement
+.contenu__evenement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    background-color: aqua;
 }

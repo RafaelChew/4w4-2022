@@ -9,10 +9,12 @@
           <?php get_sidebar("evenement_ligne_1"); ?>
      </section>
 
-   <?php if (have_posts()): the_post(); ?>
-   <?php the_post_thumbnail(); ?>
-        <?php the_title() ?>
-        <?php the_content() ?>        
-   <?php endif ?>
+     <section class="contenu__evenement">
+          <?php if (have_posts()): the_post(); ?>
+          <?php the_post_thumbnail(); ?>
+               <?php the_title() ?>
+               <?php the_content() ?>        
+          <?php endif ?>
+     </section>
 </main>
 <?php get_footer() ?>

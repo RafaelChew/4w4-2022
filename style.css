@@ -489,6 +489,7 @@ COMPOSANTES
   border-radius: 5px;
   box-shadow: #080808 1px -1px 10px;
   color: #dbdff3;
+  align-items: center;
 }
 
 .site__main__recherche {
@@ -609,6 +610,14 @@ COMPOSANTES
 
 .web {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.contenu__evenement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  background-color: aqua;
 }
 
 .site__header {
@@ -790,14 +799,22 @@ header a img {
   justify-content: center;
 }
 
-.menu-categorie_cours-container .menu .menu-item {
-  margin: 0 15px;
+.menu-categorie_cours-container .menu .menu-item a {
+  padding: 0.3rem;
+  background-color: #521414;
+  border-left: 1px solid #c04e4e;
 }
 
-.menu-categorie_cours-container .menu .menu-item a {
-  padding: 0.5rem;
-  background-color: #521414;
-  border-radius: 5px;
+@media screen and (min-width: 800px) {
+  .menu-categorie_cours-container .menu .menu-item a {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-left: none;
+  }
+}
+
+.menu-categorie_cours-container .menu a:hover {
+  background-color: #1e0a0a;
 }
 
 .site__footer {
@@ -977,6 +994,10 @@ header a img {
 
 .boite__modale__ouvrir {
   transform: scale(1);
+}
+
+.cours__desc__suite {
+  margin-left: 0.5rem;
 }
 
 .boite__modale__text {
