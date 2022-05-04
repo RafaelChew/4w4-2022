@@ -19,7 +19,7 @@ function cidw_4w4_enqueue(){
     filemtime(get_template_directory() . '/javascript/caroussel.js'),
     true );
 
-    if (is_category(['cours', 'web', 'jeu', 'utilitaire', 'design', 'creation3d', 'video'])) {
+    if (is_category(['cours', 'web', 'jeu', 'utilitaire', 'design', 'creation-3d', 'video'])) {
         wp_enqueue_script('cidw-4w4-js-modale');
     }
     
