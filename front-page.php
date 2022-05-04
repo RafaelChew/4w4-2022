@@ -18,10 +18,6 @@
                             "container"=>"nav",
                             "container_class"=>"accueil__menu__nav",
                             "menu_class"=>"accueil__menu__nav__ul",)); ?>
-                                                     
-        <?php if (have_posts()) : the_post(); endif?>
-        <h1><?php the_title() ?></h1>
-        <?php the_content() ?>
     </section>   
 </main>
 <?php get_footer() ?>

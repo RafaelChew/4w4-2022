@@ -80,11 +80,10 @@
 
 
 .footer__menu { 
-  width: 30%;
-  padding: 1rem;
+  width: 90%;
 
   &__nav{ // .footer__menu__nav
-
+    margin-bottom: 1rem;
 
     &__ul{ // .footer__menu__nav__ul
         display : flex;
@@ -97,9 +96,17 @@
           a{ // .site__footer__menu__ul .menu-item a
             display : flex;
             align-items: center;
-            padding : 3px;
+            padding : 0.2rem;
             border-radius: 5px;
             margin: 0.3rem;
+            font-size: 0.6rem;
+
+            @media screen and (min-width : $largeur__media--tablette)
+            {
+                font-size: 1rem;
+            }
+}
+
               svg { // .site__footer__menu__ul .menu-item a svg
                 color: $color__link__footer;
               }
@@ -113,4 +120,4 @@
         }    
      }
   }
-}
+

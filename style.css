@@ -526,6 +526,7 @@ COMPOSANTES
   color: #dbdff3;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
 .formation__liste {
@@ -733,8 +734,14 @@ header a img {
   padding-bottom: 1rem;
 }
 
-.site__main-accueil h1 {
-  font-size: 3rem;
+.site__main-accueil h2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .site__main-accueil h2 {
+    font-size: 2rem;
+  }
 }
 
 .accueil__menu__nav {
@@ -887,8 +894,11 @@ header a img {
 }
 
 .footer__menu {
-  width: 30%;
-  padding: 1rem;
+  width: 90%;
+}
+
+.footer__menu__nav {
+  margin-bottom: 1rem;
 }
 
 .footer__menu__nav__ul {
@@ -902,16 +912,23 @@ header a img {
 .footer__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
-  padding: 3px;
+  padding: 0.2rem;
   border-radius: 5px;
   margin: 0.3rem;
+  font-size: 0.6rem;
 }
 
-.footer__menu__nav__ul .menu-item a svg {
+@media screen and (min-width: 800px) {
+  .footer__menu__nav__ul .menu-item a {
+    font-size: 1rem;
+  }
+}
+
+.footer__menu__nav__ul .menu-item svg {
   color: #dfb972;
 }
 
-.footer__menu__nav__ul .menu-item a:hover svg {
+.footer__menu__nav__ul .menu-item:hover svg {
   color: #bf4040;
 }
 
