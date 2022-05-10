@@ -46,6 +46,10 @@
     <button class="boite__modale__ferme"> X </button>
     <article class="boite__modale__text"></article>
 </div>
+<div class="boite__carrousel">
+    <button class="boite__carrousel__ferme"> X </button>
+    <section class="boite__carrousel__navigation"></section>
+</div>
 </body>
 <?php wp_footer(); ?>
 </html>
