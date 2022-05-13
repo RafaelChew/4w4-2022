@@ -119,40 +119,67 @@
 
 .web{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
 }
 
 .jeu{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=play');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
 }
 
 .video{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=video-camera');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
 }
 
 .utilitaire{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=briefcase');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
 }
 
 .design{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=color-swatch');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
 }
 
 .creation-3d{
     background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=cube');
+
+    @media screen and (min-width : $largeur__media--tablette){
+        background-image: none;
+    }
 }
 
-// Page evenement
+// -------Page evenement----------------------------------------------------
+.titre__evenement{
+    font-size: 1.5rem;
+
+    @media screen and (min-width : $largeur__media--tablette){
+        font-size: 2rem;
+    }
+}
+
 .contenu__evenement {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    background-color: aqua;
-
-    &:first-child{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+    padding: 1rem;
+    border-radius: 10%;
+    width: 80%;
 }

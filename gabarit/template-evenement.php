@@ -3,7 +3,7 @@
 <?php get_header() ?>
 <main class="site__main">
 
-    <h1>---- Template-Évenement ------</h1>
+    
 
     <section class="evenement__gallerie">
           <?php get_sidebar("evenement_ligne_1"); ?>
@@ -12,8 +12,9 @@
      <section class="contenu__evenement">
           <?php if (have_posts()): the_post(); ?>
           <?php the_post_thumbnail(); ?>
-               <?php the_title() ?>
-               <?php the_content() ?>        
+               <h1 class= 'titre__evenement'><?php the_title() ?></h1>
+                         <?php the_content() ?>
+                     
           <?php endif ?>
      </section>
 </main>

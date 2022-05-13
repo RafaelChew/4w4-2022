@@ -613,24 +613,70 @@ COMPOSANTES
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
 }
 
+@media screen and (min-width: 800px) {
+  .web {
+    background-image: none;
+  }
+}
+
 .jeu {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=play");
+}
+
+@media screen and (min-width: 800px) {
+  .jeu {
+    background-image: none;
+  }
 }
 
 .video {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=video-camera");
 }
 
+@media screen and (min-width: 800px) {
+  .video {
+    background-image: none;
+  }
+}
+
 .utilitaire {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=briefcase");
+}
+
+@media screen and (min-width: 800px) {
+  .utilitaire {
+    background-image: none;
+  }
 }
 
 .design {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=color-swatch");
 }
 
+@media screen and (min-width: 800px) {
+  .design {
+    background-image: none;
+  }
+}
+
 .creation-3d {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=cube");
+}
+
+@media screen and (min-width: 800px) {
+  .creation-3d {
+    background-image: none;
+  }
+}
+
+.titre__evenement {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  .titre__evenement {
+    font-size: 2rem;
+  }
 }
 
 .contenu__evenement {
@@ -638,14 +684,9 @@ COMPOSANTES
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
-  background-color: aqua;
-}
-
-.contenu__evenement:first-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  padding: 1rem;
+  border-radius: 10%;
+  width: 80%;
 }
 
 .site__header {
@@ -753,8 +794,7 @@ header a img {
 }
 
 #menu-item-116:first-child {
-  background-color: yellow;
-  border-bottom-right-radius: 25%;
+  background-color: #141414;
 }
 
 .site__main-accueil {
